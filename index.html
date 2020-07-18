@@ -11,30 +11,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" href="images/noam_icon.jpg" type="image/jpeg"/>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
-		<script type="text/javascript">
-			(function(){
-			emailjs.init(''); // TODO: add USER_ID from .env
-			})();
-		</script>
-		<script type="text/javascript">
-			window.onload = function() {
-				document.getElementById('contact-form').addEventListener('submit', function(event) {
-					event.preventDefault();
-					emailjs.sendForm('gmail', 'noamtamir_com', this)
-					.then(
-						result => {
-							alert("Success! Message sent.")
-							console.log('SUCCESS!', result.status, result.text)
-						},
-						error => {
-							alert("Error!")
-							console.log('FAILED!', error.text)
-						}
-					);
-				});
-			}
-		</script>
 	</head>
 	<body class="is-preload">
 
@@ -187,7 +163,7 @@
 					<header class="major">
 						<h2>Get in touch</h2>
 					</header>
-					<form id="contact-form">
+					<form id="contact-form" method="post" action="https://postto.email/form/63542a0d-d04c-45fe-a7f1-b2a40cd38851">
 						<div class="row gtr-uniform">
 							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
 							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>

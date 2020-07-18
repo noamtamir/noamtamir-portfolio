@@ -10,6 +10,31 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" href="images/noam_icon.jpg" type="image/jpeg"/>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+		<script type="text/javascript">
+			(function(){
+			emailjs.init(''); // TODO: add USER_ID from .env
+			})();
+		</script>
+		<script type="text/javascript">
+			window.onload = function() {
+				document.getElementById('contact-form').addEventListener('submit', function(event) {
+					event.preventDefault();
+					emailjs.sendForm('gmail', 'noamtamir_com', this)
+					.then(
+						result => {
+							alert("Success! Message sent.")
+							console.log('SUCCESS!', result.status, result.text)
+						},
+						error => {
+							alert("Error!")
+							console.log('FAILED!', error.text)
+						}
+					);
+				});
+			}
+		</script>
 	</head>
 	<body class="is-preload">
 

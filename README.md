@@ -2,13 +2,13 @@
 noamtamir.com - portfolio website
 
 
-# Theme		
-Highlights by HTML5 UP		
-html5up.net | @ajlkn		
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)		
-AJ		
-aj@lkn.io | @ajlkn		
-Credits:		
+## Theme<br>
+Highlights by HTML5 UP<br>
+html5up.net | @ajlkn<br>
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)<br>
+AJ<br>
+aj@lkn.io | @ajlkn<br>
+Credits:<br>
 
 	Demo Images:
 		Unsplash (unsplash.com)

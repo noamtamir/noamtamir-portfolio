@@ -85,7 +85,7 @@ input, select, textarea {
 	html {
 		background-color: #313a3d;
 		background-attachment: fixed,						fixed;
-		background-image: url("images/overlay.png"), url("../../images/ganevet_bass.jpg");
+		background-image: url("images/overlay.png"), url("../../images/dor_hamabul_overall.jpg");
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
@@ -2894,7 +2894,7 @@ input, select, textarea {
 
 	#footer {
 		min-height: 100vh;
-		padding: 0 0 12em 0;
+		padding: 12em;
 		position: relative;
 		text-align: center;
 	}
